@@ -1,0 +1,342 @@
+/* font */
+
+.kanit {
+  font-family: 'Kanit', sans-serif;
+}
+.dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* -- */
+
+/* color */
+.putih {
+  color: #fff;
+}
+.biru {
+  color: rgb(18, 57, 165);
+}
+.merah {
+  color: red;
+}
+.oren {
+  color: orange;
+}
+.hitam {
+  color: black;
+}
+
+/* global class */
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative;
+}
+
+.tengah {
+  text-align: center;
+  justify-content: center;
+}
+.kebawah {
+  flex-direction: column;
+}
+.kesamping {
+  flex-direction: row;
+}
+.flex {
+  display: flex;
+}
+.tjuhpuluh {
+  width: 65%;
+}
+.latar {
+  background-color: rgba(189, 189, 189, 0.4);
+  border-radius: 5px;
+}
+.dark {
+  background-color: rgb(34, 34, 34);
+}
+.tridi {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  background-image: url(../images/full-bloom.png);
+  background-attachment: fixed;
+
+  position: relative;
+  overflow-x: hidden;
+}
+.title::after {
+  content: '';
+  background: #ee9003;
+  width: 120px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(18, 57, 165);
+  justify-content: space-between;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+nav img {
+  margin-left: 50px;
+  width: 120px;
+}
+nav a {
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  margin-right: 60px;
+  font-size: 21px;
+  list-style: none;
+}
+nav li {
+  margin: -5px 4px;
+  padding: 0 10px;
+}
+nav li:hover {
+  transition: 0.3s ease-in-out;
+  transform: translate(-1px, -1px);
+  cursor: pointer;
+  background-color: rgb(255, 153, 0);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.header {
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header img {
+  margin: 2px 40px;
+}
+
+#content .container {
+  margin-top: 30px;
+}
+
+#content .container h1 {
+  margin: 10px 5px auto;
+  font-size: 4.5rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.row .tulisan {
+  width: 40%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  margin-left: -20px;
+  margin-right: 20px;
+  background-color: rgb(18, 57, 165);
+}
+
+.btn {
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(240, 122, 11);
+  border: 1px solid rgb(247, 125, 11);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  margin-left: 218px;
+  padding: 0 10px;
+  transform: translate(0, 0);
+}
+.btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#content .row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#content .row .gambar {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(247, 145, 11);
+}
+#content .tagline {
+  width: fit-content;
+  background-color: rgb(18, 57, 165);
+  padding: 0px 20px 0px 20px;
+}
+#content .alamat {
+  width: fit-content;
+  background-color: rgb(247, 145, 11);
+}
+#sponsor .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#sponsor img {
+  width: 110px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  text-align: center;
+  line-height: 50px;
+  margin-top: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+/* #katalog h3 {
+  margin-top: 60px;
+  margin-bottom: -10px;
+  font-size: 2rem;
+} */
+#katalog img {
+  width: 200px;
+}
+#katalog .col {
+  margin: 0 10px;
+  padding: 10px 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 7px;
+}
+#katalog i {
+  color: orange;
+}
+#katalog .col:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  margin-top: 100px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+#about h4 {
+  font-size: 1.5rem;
+  margin: 10px 20px 30px 20px;
+  text-align: center;
+}
+#about h5 {
+  margin: 2px auto -1px 10px;
+  font-size: 1.2rem;
+}
+#about .artikel {
+  width: 40%;
+  height: fit-content;
+  margin: 7px;
+
+  padding: 20px;
+}
+#about .artikel p {
+  margin-top: -20px;
+}
+#about .rincian {
+  display: flex;
+}
+#about .detail {
+  margin: 15px auto auto 20px;
+}
+
+#kontak .form-control {
+  width: 600px;
+  height: 40px;
+  margin: 15px;
+  padding: 5px auto 10px 30px;
+  padding-left: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgb(34, 34, 34);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+#kontak textarea {
+  width: 600px;
+  height: 120px;
+  margin: 15px auto 30px 130px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  padding-left: 15px;
+}
+#kontak .row {
+  justify-content: space-evenly;
+  padding: 10p;
+}
+#kontak img {
+  width: 50px;
+}
+#kontak .col h4 {
+  line-height: 0px;
+  font-size: 20px;
+}
+#faq .container {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#faq .konten {
+  width: 100%;
+  justify-content: space-evenly;
+  padding-left: 30px;
+}
+#faq .tanya {
+  padding-left: 30px;
+  width: 40%;
+}
+#faq .tanya h4 {
+  margin: 40px auto 30px 10px;
+}
+#faq .jawab {
+  width: 40%;
+  padding-left: 30px;
+}
+#faq .jawab p {
+  margin: 30px 30px;
+}
+
+hr {
+  margin-top: 50px;
+  width: 900px;
+  color: #757575;
+}

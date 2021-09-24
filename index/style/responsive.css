@@ -1,0 +1,30 @@
+/* RWD */
+
+@media screen and (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  #content .row {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .btn {
+    justify-content: center;
+  }
+  .tulisan,
+  .gambar {
+    width: 80% !important;
+  }
+  #sponsor .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #katalog .row {
+    display: flex;
+  }
+  #katalog .col {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
